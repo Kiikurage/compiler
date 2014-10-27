@@ -1,0 +1,486 @@
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "undefined/**"}
+[DEBUG] CharReader#nextLine >>  *  一文字を表す型
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "一文字を表す型"}
+[DEBUG] CharReader#nextLine >>  *  @typedef {string}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "typedef"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "string"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> var char;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "var"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "char"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  @constructor
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "constructor"}
+[DEBUG] CharReader#nextLine >>  *  @param {string} text 解析する文章
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "param"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "string"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "text"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "解析する文章"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> function CharReader(text) {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "function"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "text"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ")"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>     this.lines_ = text.split('\n');
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lines_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "text"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "split"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "('\"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "n"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "');"}
+[DEBUG] CharReader#nextLine >>     this.lineLenegth_ = 0;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineLenegth_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 2, token: "0"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >>     this.index_ = 1;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 2, token: "1"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >>     this.lineIndex_ = 0;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineIndex_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 2, token: "0"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> }
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  ファイルの終端文字
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "ファイルの終端文字"}
+[DEBUG] CharReader#nextLine >>  *  @type {char}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "char"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  *  @const
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "const"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.EOF = '';
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "EOF"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "'';"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  行の集合
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "行の集合"}
+[DEBUG] CharReader#nextLine >>  *  @type {string[]}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "string"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "[]}"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.lines_;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lines_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  現在読み込んでいる行
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "現在読み込んでいる行"}
+[DEBUG] CharReader#nextLine >>  *  @type {string}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "string"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.line_;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "line_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  現在読み込んでいる行の長さ
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "現在読み込んでいる行の長さ"}
+[DEBUG] CharReader#nextLine >>  *  @type {number}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "number"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.lineLenegth_;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineLenegth_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  現在読み込んでいる位置
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "現在読み込んでいる位置"}
+[DEBUG] CharReader#nextLine >>  *  @type {number}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "number"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.index_;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  現在読み込んでいる行の位置
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "現在読み込んでいる行の位置"}
+[DEBUG] CharReader#nextLine >>  *  @type {int}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "type"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "int"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.lineIndex_;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineIndex_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  一文字読み込む
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "一文字読み込む"}
+[DEBUG] CharReader#nextLine >>  *  @return {char} 読み込んだ文字
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "char"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "読み込んだ文字"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.nextChar = function() {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextChar"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "function"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "()"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>     if (this.index_ < this.lineLenegth_) {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "if"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "<"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineLenegth_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ")"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>         return this.line_.charAt(this.index_++)
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "line_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "charAt"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "++)"}
+[DEBUG] CharReader#nextLine >>     }
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >>     if (this.index_++ === this.lineLenegth_) {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "if"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "++"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "==="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineLenegth_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ")"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>         return '\n'
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "'\"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "n"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "'"}
+[DEBUG] CharReader#nextLine >>     }
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >>     this.line_ = this.nextLine_();
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "line_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "();"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >>     if (this.line_ === null) {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "if"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "line_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "==="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "null"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ")"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>         return CharReader.EOF
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "EOF"}
+[DEBUG] CharReader#nextLine >>     }
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >>     this.lineLenegth_ = this.line_.length;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineLenegth_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "line_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "length"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >>     this.index_ = 0;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 2, token: "0"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >>     return this.nextChar()
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextChar"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "()"}
+[DEBUG] CharReader#nextLine >> };
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "};"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  読み込み位置カーソルを一文字戻す
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "読み込み位置カーソルを一文字戻す"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.backChar = function() {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "backChar"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "function"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "()"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>     this.index_--;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "index_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "--;"}
+[DEBUG] CharReader#nextLine >> };
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "};"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> /**
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "/**"}
+[DEBUG] CharReader#nextLine >>  *  次の行を読み込む
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "次の行を読み込む"}
+[DEBUG] CharReader#nextLine >>  *  @return {string|null} 一行。次の行が存在しない場合はnullを返す。
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "string"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "|"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "null"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "一行。次の行が存在しない場合は"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "null"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "を返す。"}
+[DEBUG] CharReader#nextLine >>  *  @private
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "@"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "private"}
+[DEBUG] CharReader#nextLine >>  */
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "*/"}
+[DEBUG] CharReader#nextLine >> CharReader.prototype.nextLine_ = function() {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "prototype"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "function"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "()"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>     var nextLine = null;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "var"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "null"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >>     if (this.lineIndex_ < this.lines_.length) {
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "if"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "("}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineIndex_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "<"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lines_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "length"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ")"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "{"}
+[DEBUG] CharReader#nextLine >>         nextLine = this.lines_[this.lineIndex_++];
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lines_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "["}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "this"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "lineIndex_"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "++];"}
+[DEBUG] CharReader#nextLine >>     }
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "}"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >>     console.error('[DEBUG] CharReader#nextLine >> %s', nextLine);
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "console"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "error"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "('["}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "DEBUG"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "]"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "#"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ">>"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "%"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "s"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "',"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ");"}
+[DEBUG] CharReader#nextLine >>     return nextLine;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "return"}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "nextLine"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> };
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "};"}
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> 
+[DEBUG] CharReader#nextLine >> module.exports = CharReader;
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "module"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "."}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "exports"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: "="}
+[DEBUG] TokenReader#nextToken >> {kind: 1, token: "CharReader"}
+[DEBUG] TokenReader#nextToken >> {kind: 0, token: ";"}
+[DEBUG] CharReader#nextLine >> null
+[DEBUG] TokenReader#nextToken >> {kind: 4, token: ""}
